@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.test.HelloController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="700.0">
+         <top>
+            <AnchorPane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #dad8a7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="546.0" layoutY="22.0" mnemonicParsing="false" onAction="#tostatics" prefHeight="33.0" prefWidth="100.0" text="TO STATICS">
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="416.0" prefWidth="152.0" style="-fx-background-color: #dad8a7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="3.0" layoutY="143.0" prefHeight="17.0" prefWidth="143.0" text="DIMENSION PRODUITS" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="2.0" layoutY="29.0" prefHeight="19.0" prefWidth="138.0" text="DIMENSION CLIENTS">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="245.0" prefHeight="22.0" prefWidth="134.0" text="DIMENSION MOIS">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cbclient" layoutX="2.0" layoutY="48.0" prefHeight="25.0" prefWidth="117.0" />
+                  <ChoiceBox fx:id="cbproduit" layoutX="2.0" layoutY="160.0" prefHeight="25.0" prefWidth="117.0" />
+                  <ChoiceBox fx:id="cbmois" layoutX="2.0" layoutY="267.0" prefHeight="25.0" prefWidth="117.0" />
+                  <Button fx:id="selectitems" layoutX="17.0" layoutY="338.0" mnemonicParsing="false" onAction="#hundlebtn" prefHeight="31.0" prefWidth="109.0" text="select" textFill="#d03030">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="403.0" prefWidth="545.0" style="-fx-background-color: #7fc7af;" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="benefice" prefHeight="415.0" prefWidth="548.0" style="-fx-background-color: #3fb8af;" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
